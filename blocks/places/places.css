@@ -1,7 +1,6 @@
-.places{
+.places {
     display: grid;
     justify-content: center;
-    grid-template-rows: repeat(5, auto);
     row-gap: 80px;
     margin: 0 48px 92px;
 }
@@ -13,9 +12,18 @@
     }
 }
 
+@media screen and (max-width:660px) {
+    .places {
+        grid-template-columns: auto;
+        row-gap: 32px;
+        margin: 0 auto 66px;
+    }
+}
+
 @media screen and (max-width:320px) {
     .places {
         row-gap: 50px;
-        margin: 0 16px 66px;
+        margin: 0 0 66px;
     }
 }
+

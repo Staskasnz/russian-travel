@@ -1,23 +1,24 @@
-.header{
+.header {
     display: flex;
-gap: 18px;
+    gap: 18px;
     margin: 28px 48px 56px;
+    justify-content: space-between;
 }
 
 @media screen and (max-width:1024px) {
-    .header{
+    .header {
         margin: 28px 48px 48px;
     }
 }
 
 @media screen and (max-width:768px) {
-    .header{
+    .header {
         margin: 28px 24px 48px;
     }
 }
 
 @media screen and (max-width:320px) {
-    .header{
+    .header {
         margin: 16px 16px 48px;
     }
 }

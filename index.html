@@ -13,8 +13,10 @@
     <div class="page__container">
         <header class="header">
             <img src="images/__logo.svg" alt="Россия" class="header__logo">
-            <a href="#" class="header__lang-link link">Ru</a>
-            <a href="#" class="header__lang-link link">En</a>
+            <div class="header__link">
+                <a href="#" class="header__lang-link header__lang-link_underline link">Ru</a>
+                <a href="#" class="header__lang-link link">En</a>
+            </div>
         </header>
         <main class="content">
             <section class="lead">
@@ -25,7 +27,7 @@
             </section>
             <section class="intro">
                 <h2 class="intro__title">Чего мы&nbsp;там
-                    не&nbsp;видели?</h2>
+                    не видели?</h2>
                 <p class="intro__text">По опросам ВЦИОМ, 95% россиян мечтают куда-нибудь поехать, но только 36%
                     планируют провести отпуск в родной стране. Мол, чего мы тут, дома, не видели? На самом деле, Россия
                     — это целая вселенная с ласковым морем юга, густыми лесами Саян и суровыми льдами плато Путорана. А
@@ -41,33 +43,32 @@
                     <li><span class="bold">Аэропортов</span> 241</li>
                 </ul>
             </section>
-            <div class="photo-grid">
-                <img src="images/__item.jpg" alt="Пейзаж1" class="photo-grid__item">
-                <img src="images/__item(1).jpg" alt="Пейзаж1" class="photo-grid__item">
-                <img src="images/__item(2).jpg" alt="Пейзаж2" class="photo-grid__item">
-                <img src="images/__item(3).jpg" alt="Пейзаж3" class="photo-grid__item">
-                <img src="images/__item(4).jpg" alt="Пейзаж4" class="photo-grid__item">
-                <img src="images/__item(5).jpg" alt="Пейзаж5" class="photo-grid__item">
-                <img src="images/__item(6).jpg" alt="Пейзаж6" class="photo-grid__item">
-                <img src="images/__item(7).jpg" alt="Пейзаж7" class="photo-grid__item">
-                <img src="images/__item(8).jpg" alt="Пейзаж8" class="photo-grid__item">
-                <img src="images/__item(9).jpg" alt="Пейзаж9" class="photo-grid__item">
-                <img src="images/__item(10).jpg" alt="Пейзаж10" class="photo-grid__item">
-                <img src="images/__item(11).jpg" alt="Пейзаж11" class="photo-grid__item">
-            </div>
+            <!-- photo-grid в предыдущий раз я сделал дивом, потому что валидатор ругался на то что в section должны быть заголовки, 
+                возможно так не по симантике -->
+            <section class="photo-grid">
+                <img src="images/__item.jpg" alt="Вид из окна поезда" class="photo-grid__item">
+                <img src="images/__item(1).jpg" alt="Горы с птичьего полета" class="photo-grid__item">
+                <img src="images/__item(2).jpg" alt="Собака н астоге сена" class="photo-grid__item">
+                <img src="images/__item(3).jpg" alt="Лес, горы, туман" class="photo-grid__item">
+                <img src="images/__item(4).jpg" alt="Прозрачный лед Байкала" class="photo-grid__item">
+                <img src="images/__item(5).jpg" alt="Берег моря" class="photo-grid__item">
+                <img src="images/__item(6).jpg" alt="Заснеженые горные вершины7" class="photo-grid__item">
+                <img src="images/__item(7).jpg" alt="Дорожный знак" class="photo-grid__item">
+                <img src="images/__item(8).jpg" alt="Горы в тумане" class="photo-grid__item">
+                <img src="images/__item(9).jpg" alt="Горы" class="photo-grid__item">
+                <img src="images/__item(10).jpg" alt="Скалы" class="photo-grid__item">
+                <img src="images/__item(11).jpg" alt="Горы в тумане" class="photo-grid__item">
+            </section>
             <section class="places">
                 <div class="place">
                     <h2 class="place__title">Куршская коса</h2>
-                    <ul class="place__website">
-                        <li>
-                            <p class="place__url-heading">URL</p>
-                        </li>
-                        <li><a href="http://park-kosa.ru" class="place__link link" target="_blank">park-kosa.ru</a>
-                        </li>
-                    </ul>
+                    <div class="place__website">
+                        <p class="place__url-heading">URL</p>
+                        <a href="http://park-kosa.ru" class="place__link link" target="_blank">park-kosa.ru</a>
+                    </div>
 
-                    <img src="images/__image(1).jpg" alt="Пейзаж12" class="place__image">
-                    <div class="paragraph">
+                    <img src="images/__image(1).jpg" alt="Куршская коса" class="place__image">
+                    <div>
                         <p class="place__paragraph">Здесь, посреди лесов и&nbsp;песчаных дюн, вы&nbsp;сможете увидеть
                             два водных горизонта&nbsp;&mdash; спокойного Куршского залива с&nbsp;одной стороны
                             и&nbsp;подёрнутого рябью волн Балтийского моря с&nbsp;другой. Уникальная природная зона
@@ -82,16 +83,15 @@
                 </div>
                 <div class="place">
                     <h2 class="place__title">Кольский</h2>
-                    <ul class="place__website">
-                        <li>
-                            <p class="place__url-heading">URL</p>
-                        </li>
-                        <li><a href="https://yourshot.nationalgeographic.com/photos/?keywords=kolskiy"
-                                class="place__link link" target="_blank">National Geographic</a></li>
-                    </ul>
+                    <div class="place__website">
+                        <p class="place__url-heading">URL</p>
+                        <a href="https://yourshot.nationalgeographic.com/photos/?keywords=kolskiy"
+                            class="place__link link" target="_blank">National Geographic</a>
+                    </div>
 
-                    <img src="images/__image(2)(1).jpg" alt="Пейзаж13" class="place__image">
-                    <div class="paragraph">
+                    <img src="images/__image(2)(1).jpg" alt="Кольский" class="place__image">
+                    <!-- решил просто убрать класс в диве, т,к не используются свойства -->
+                    <div>
                         <p class="place__paragraph">Почти весь полуостров находится за Полярным кругом. Саамская тундра,
                             от которой на юг —
                             тайга, а на север — Ледовитый океан, прикидывающийся Баренцевым морем.</p>
@@ -105,16 +105,14 @@
                 </div>
                 <div class="place">
                     <h2 class="place__title">Алтай</h2>
-                    <ul class="place__website">
-                        <li>
-                            <p class="place__url-heading">URL</p>
-                        </li>
-                        <li><a href="https://www.facebook.com/vera.bashmakova/posts/10156011613718822"
-                                class="place__link link" target="_blank">Facebook</a></li>
-                    </ul>
+                    <div class="place__website">
+                        <p class="place__url-heading">URL</p>
+                        <a href="https://www.facebook.com/vera.bashmakova/posts/10156011613718822"
+                            class="place__link link" target="_blank">Facebook</a>
+                    </div>
 
-                    <img src="images/__image(3)(1).jpg" alt="Пейзаж14" class="place__image">
-                    <div class="paragraph">
+                    <img src="images/__image(3)(1).jpg" alt="Алтай" class="place__image">
+                    <div>
                         <p class="place__paragraph">Алтай — одно из красивейших мест в России.
                             В первую очередь из-за гор: если ехать вдоль хребта, вы увидите склоны, усыпанные соснами,
                             горные реки и озёра. А если вы откроете в автомобиле окна, сможете познакомиться с невидимым
@@ -127,16 +125,14 @@
                 </div>
                 <div class="place">
                     <h2 class="place__title">Зимний Байкал</h2>
-                    <ul class="place__website">
-                        <li>
-                            <p class="place__url-heading">URL</p>
-                        </li>
-                        <li><a href="https://vk.com/baikalmile" class="place__link link"
-                                target="_blank">https://vk.com/baikalmile</a></li>
-                    </ul>
+                    <div class="place__website">
+                        <p class="place__url-heading">URL</p>
+                        <a href="https://vk.com/baikalmile" class="place__link link"
+                            target="_blank">https://vk.com/baikalmile</a>
+                    </div>
 
-                    <img src="images/__image(4)(1).jpg" alt="Пейзаж15" class="place__image">
-                    <div class="paragraph">
+                    <img src="images/__image(4)(1).jpg" alt="Зимний Байкал" class="place__image">
+                    <div>
                         <p class="place__paragraph">Всем известен Байкал как крупнейшее озеро
                             в мире. Многие также знают, что это самый большой источник пресной воды и одно из
                             красивейших мест в России.</p>
@@ -149,16 +145,14 @@
                 </div>
                 <div class="place">
                     <h2 class="place__title">Карелия</h2>
-                    <ul class="place__website">
-                        <li>
-                            <p class="place__url-heading">URL</p>
+                    <div class="place__website">
+                        <p class="place__url-heading">URL</p>
+                        <a href="http://vodlozero.ru" class="place__link link" target="_blank">http://vodlozero.ru/</a>
                         </li>
-                        <li><a href="http://vodlozero.ru" class="place__link link"
-                                target="_blank">http://vodlozero.ru/</a></li>
-                    </ul>
+                    </div>
 
-                    <img src="images/__image(5)(1).jpg" alt="Пейзаж16" class="place__image">
-                    <div class="paragraph">
+                    <img src="images/__image(5)(1).jpg" alt="Карелия" class="place__image">
+                    <div>
                         <p class="place__paragraph">Сибирь заканчивается не на Урале, а в Карелии: образующая тайгу
                             сибирская лиственница не растёт западнее Водлозера. Зато здесь она вымахивает на 30 метров —
                             леса карельских национальных парков из-за непроходимых болот никогда не знали топора.
@@ -178,11 +172,13 @@
             </section>
         </main>
         <footer class="footer">
-            <a href="https://yandex.ru/maps" class="footer__link link">Карты</a>
-            <a href="https://yandex.ru/pogoda" class="footer__link link">Погода</a>
-            <a href="https://rasp.yandex.ru" class="footer__link link">Расписание</a>
-            <a href="https://calendar.yandex.ru" class="footer__link link">Календарь</a>
-            <a href="https://travel.yandex.ru" class="footer__link link">Путешествия</a>
+            <nav class="footer__links">
+                <a href="https://yandex.ru/maps" class="footer__link link">Карты</a>
+                <a href="https://yandex.ru/pogoda" class="footer__link link">Погода</a>
+                <a href="https://rasp.yandex.ru" class="footer__link link">Расписание</a>
+                <a href="https://calendar.yandex.ru" class="footer__link link">Календарь</a>
+                <a href="https://travel.yandex.ru" class="footer__link link">Путешествия</a>
+            </nav>
             <p class="footer__copyright">© 2022. Александров Станислав</p>
         </footer>
     </div>

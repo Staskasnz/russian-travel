@@ -17,3 +17,7 @@ For support, email staskasnz@mail.ru or join our Slack channel.
 Я начинающий фронтэнд программист.
 Обучаюсь в яндекс практикуме)
 
+
+## Link
+
+https://staskasnz.github.io/russian-travel/

@@ -1,8 +1,5 @@
-.link{
+.link {}
 
+.link:hover {
+  opacity: .8;
 }
-
-.link:hover{
-    opacity: .5;
-  }
-  

@@ -1,4 +1,4 @@
-.place{
+.place {
     display: grid;
     grid-template-rows: repeat(2, auto);
     grid-template-columns: 460px auto;
@@ -12,7 +12,7 @@
     }
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width:920px) {
     .place {
         gap: 48px 28px;
         grid-template-columns: 340px auto;
